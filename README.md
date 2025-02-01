@@ -12,7 +12,7 @@ followed by CNN and VGG16 at 97% and 60 %. This could potentially open pathways
 for more work on these models with respect to Indian classical music, thus optimizing its
 classification.
 
-**Introduction of Ragas and Western Classical Music:-** 
+#Introduction of Ragas and Western Classical Music
 This research is focused on applying these techniques to classify Indian music, specifically
 Indian classical music. There are nuances that separate Western and Indian classical music.
 As [2] states, Indian music has very ancient roots. Despite it being one of the oldest musical
