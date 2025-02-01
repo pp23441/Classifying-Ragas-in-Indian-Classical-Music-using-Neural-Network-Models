@@ -72,10 +72,11 @@ You need to install the required libraries for run this program `pip`:
 
 ```bash
 pip install numpy pandas librosa scipy scikit-learn matplotlib IPython Keras TensorFlow SpeechRecognition pydub Sklearn
+
 ```
 
-# North Indian Classical Music Dataset
 
+# North Indian Classical Music Dataset
 
 Here, the dataset is North Indian Classical Music by Kcwaghmare Waghmare[36]. This dataset
 has 8 different ragas ( Such as Asawari, Bageshree, Bhairavi, Boopali, Darbari Kanada, Malkauns,
@@ -97,6 +98,27 @@ The Ragas included are:
   - `Yaman`
 #### Confusion Matrix
 ![image](https://github.com/user-attachments/assets/3c68cdba-fe0d-4304-9113-ce3f023d11dc)
+
+
+# Pitch Detection and Note Mapping
+
+The Librosa piptrack function to identify pitches (frequencies) in the audio signal. By
+comparing it with the computed note frequencies, the closest comparable note for each detected
+pitch is found. Plotting an empty string indicates that a detected pitch is discarded
+if it does not match any note very accurately.
+Calculating the found notes across time is how the application visualizes the data. The
+identified musical notes (Sa, Re, Ga, Ma, and Paa) are displayed on the y-axis, while
+the x-axis shows the time in seconds. The plot captures the melodic structure of the
+performance by giving an image of how the notes change during the audio sample.
+Labeled Sa, Re, Ga, Ma, and Paa, the y-axis displays the musical notes. Typically, the
+Bhairavi raga utilizes notes like these. Each dot on the plot represents a note that was
+discovered at a particular time.
+About three seconds are covered by the x-axis, which shows time in seconds. The note
+evolution as the song develops is shown on this timeline.
+
+![image](https://github.com/user-attachments/assets/34bf8339-f69c-4d27-b82e-8b0e5958c655)
+
+
 
 
 # Conclusion 
