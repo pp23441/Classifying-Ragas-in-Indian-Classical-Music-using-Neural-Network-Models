@@ -1,0 +1,2 @@
+# Classifying-Ragas-in-Indian-Classical-Music-using-Neural-Network-Models
+This project aimed to classify Indian classical music recording clips using different machinelearning techniques. We trained three models namely CNN, LSTM and VGG16 to perform feature extraction and in turn raga-based genre classification for Indian classical music. The models were trained using the approach and initial parameters of Retta et al.
