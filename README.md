@@ -12,7 +12,7 @@ followed by CNN and VGG16 at 97% and 60 %. This could potentially open pathways
 for more work on these models with respect to Indian classical music, thus optimizing its
 classification.
 
-#Introduction of Ragas and Western Classical Music
+# Introduction of Ragas and Western Classical Music
 This research is focused on applying these techniques to classify Indian music, specifically
 Indian classical music. There are nuances that separate Western and Indian classical music.
 As [2] states, Indian music has very ancient roots. Despite it being one of the oldest musical
@@ -46,6 +46,63 @@ today. One eminent distinction between Indian and Western style Music lies in th
 of dealing with song and agreement. While Western music majorly emphasizes concordance,
 with complex harmony movements, Indian Traditional Music is principally melodic, zeroing in
 on the ornamentations and subtleties of individual ragas.
+
+## Prerequisites
+
+Before running the notebook, ensure you have the following installed:
+
+- Python 3.12.2 or later
+- Google Colab based program
+- Required Python libraries:
+  - `numpy`
+  - `pandas`
+  - `librosa`
+  - `math`
+  - `scipy`
+  - `scikit-learn`
+  - `matplotlib`
+  - `Keras`
+  - `TensorFlow`
+  - `q visualkeras`
+  - `SpeechRecognition pydub`
+  - `Sklearn`
+
+
+You need to install the required libraries for run this program `pip`:
+
+```bash
+pip install numpy pandas librosa scipy scikit-learn matplotlib IPython Keras TensorFlow SpeechRecognition pydub Sklearn
+```
+
+# North Indian Classical Music Dataset
+
+
+Here, the dataset is North Indian Classical Music by Kcwaghmare Waghmare[36]. This dataset
+has 8 different ragas ( Such as Asawari, Bageshree, Bhairavi, Boopali, Darbari Kanada, Malkauns,
+Vrindavan Sarang, and Yaman) and this side the Kaggle folder 80 Wav format Ragas as
+well as including instrumental music. But, this Wav Ragas length is 4 to 5 minutes. So, this
+program is splitting the data into 30 and 3 Seconds. After this process, the dataset converts into
+a larger scale dataset, it’s around 500 plus 30 Seconds of Wav music and 3 Seconds of around
+4425 Wav songs with instrumentals.
+
+The Ragas included are:
+
+  - `Asawari`
+  - `Bageshree`
+  - `Bhairavi`
+  - `Boopali`
+  - `Darbari Kanada`
+  - `Malkauns`
+  - `Vrindavani Sarang`
+  - `Yaman`
+#### Confusion Matrix
+![image](https://github.com/user-attachments/assets/3c68cdba-fe0d-4304-9113-ce3f023d11dc)
+
+
+# Conclusion 
+
+As part of the project, we investigated the essence of ragas, talas, and the complex exchange of tune and beat. We also examined the overlap between Indian and Western Classical music which could potentially be used to build MIR systems which can handle both. Thus the project carries out training experiments as well as expanding our knowledge about how North Indian and Western classical musics interrelate. In this project, we used the North Indian Classical Music dataset, which classifies a set of recordings in terms of four main scales for Ragas and Talas, and in addition two other datasets for comparison, GTZAN, a Western music genre dataset, and an Ethiopian Kinit dataset. Here, tools and techniques such as CNNs and MIR can help set up a model that can identify these complexities within an Indian classical music piece and query a database consisting of such audio to identify specific features of the music. This can be useful for musicians, musicologists and specialists working with Indian classical music as it can make analysis of the traditional music much easier. Existing database such as SangeetXML can be the starting point. Such databases can be used with existing systems such as MusicXML, in a modified way to create such a model.
+
 
 
 
